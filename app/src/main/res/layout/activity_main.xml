@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_app"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:id="@+id/Linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginEnd="64dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <EditText
+            android:id="@+id/editTextTextNome"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/input_element"
+            android:ems="10"
+            android:inputType="text"
+            android:hint="@string/username"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:layout_marginBottom="12dp"
+            android:autofillHints="" />
+        <EditText
+            android:id="@+id/editTextTextSenha"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/input_element"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:hint="@string/password"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:autofillHints="" />
+
+        <Button
+            style="@null"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/button_element"
+            android:ems="10"
+            android:text="@string/logar"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"/>
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/logo_xs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="40dp"
+        android:src="@mipmap/logo_unemat_xs"
+        app:layout_constraintBottom_toTopOf="@+id/Linear_layout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        android:contentDescription="@string/logo_image" />
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/back_bottom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:contentDescription="@string/decoration_image" />
+</androidx.constraintlayout.widget.ConstraintLayout>
